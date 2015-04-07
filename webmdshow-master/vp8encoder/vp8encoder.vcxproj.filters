@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="IDL">
+      <UniqueIdentifier>{e2a31c18-9367-4acc-ae07-d7b86ccb04e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vp8encoderfilter.h" />
+    <ClInclude Include="vp8encoderinpin.h" />
+    <ClInclude Include="vp8encoderoutpin.h" />
+    <ClInclude Include="vp8encoderoutpinpreview.h" />
+    <ClInclude Include="vp8encoderoutpinvideo.h" />
+    <ClInclude Include="vp8encoderpin.h" />
+    <ClInclude Include="vp8encoderproppage.h" />
+    <ClInclude Include="..\IDL\vp8encoderidl.h">
+      <Filter>IDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vp8encoder.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllentry.cc" />
+    <ClCompile Include="vp8encoderfilter.cc" />
+    <ClCompile Include="vp8encoderinpin.cc" />
+    <ClCompile Include="vp8encoderoutpin.cc" />
+    <ClCompile Include="vp8encoderoutpinpreview.cc" />
+    <ClCompile Include="vp8encoderoutpinvideo.cc" />
+    <ClCompile Include="vp8encoderpin.cc" />
+    <ClCompile Include="vp8encoderproppage.cc" />
+    <ClCompile Include="..\IDL\vp8encoderidl.c">
+      <Filter>IDL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="..\IDL\vp8encoder.idl">
+      <Filter>IDL</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

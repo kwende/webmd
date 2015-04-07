@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="IDL">
+      <UniqueIdentifier>{a5df068c-e120-4c5d-a0b0-29afc1b92320}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllentry.cc" />
+    <ClCompile Include="webmmuxcontext.cc" />
+    <ClCompile Include="webmmuxebmlio.cc" />
+    <ClCompile Include="webmmuxfilter.cc" />
+    <ClCompile Include="webmmuxinpin.cc" />
+    <ClCompile Include="webmmuxinpinaudio.cc" />
+    <ClCompile Include="webmmuxinpinvideo.cc" />
+    <ClCompile Include="webmmuxoutpin.cc" />
+    <ClCompile Include="webmmuxpin.cc" />
+    <ClCompile Include="webmmuxstream.cc" />
+    <ClCompile Include="webmmuxstreamaudio.cc" />
+    <ClCompile Include="webmmuxstreamaudiovorbis.cc" />
+    <ClCompile Include="webmmuxstreamaudiovorbisogg.cc" />
+    <ClCompile Include="webmmuxstreamvideo.cc" />
+    <ClCompile Include="webmmuxstreamvideovpx.cc" />
+    <ClCompile Include="..\IDL\webmmuxidl.c">
+      <Filter>IDL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="webmmuxcontext.h" />
+    <ClInclude Include="webmmuxebmlio.h" />
+    <ClInclude Include="webmmuxfilter.h" />
+    <ClInclude Include="webmmuxinpin.h" />
+    <ClInclude Include="webmmuxinpinaudio.h" />
+    <ClInclude Include="webmmuxinpinvideo.h" />
+    <ClInclude Include="webmmuxoutpin.h" />
+    <ClInclude Include="webmmuxpin.h" />
+    <ClInclude Include="webmmuxstream.h" />
+    <ClInclude Include="webmmuxstreamaudio.h" />
+    <ClInclude Include="webmmuxstreamaudiovorbis.h" />
+    <ClInclude Include="webmmuxstreamaudiovorbisogg.h" />
+    <ClInclude Include="webmmuxstreamvideo.h" />
+    <ClInclude Include="webmmuxstreamvideovpx.h" />
+    <ClInclude Include="..\IDL\webmmuxidl.h">
+      <Filter>IDL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="webmmux.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="..\IDL\webmmux.idl">
+      <Filter>IDL</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

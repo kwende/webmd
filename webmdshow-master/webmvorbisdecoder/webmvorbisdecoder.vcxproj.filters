@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Vorbis Files">
+      <UniqueIdentifier>{b1499dd7-5216-4854-a123-e870055f92f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libvorbis\vorbis\codec.h">
+      <Filter>Vorbis Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libogg\ogg\ogg.h">
+      <Filter>Vorbis Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\libogg\ogg\os_types.h">
+      <Filter>Vorbis Files</Filter>
+    </ClInclude>
+    <ClInclude Include="webmvorbisdecoderfilter.h" />
+    <ClInclude Include="webmvorbisdecoderinpin.h" />
+    <ClInclude Include="webmvorbisdecoderoutpin.h" />
+    <ClInclude Include="webmvorbisdecoderpin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="webmvorbisdecoder.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllentry.cc" />
+    <ClCompile Include="webmvorbisdecoderfilter.cc" />
+    <ClCompile Include="webmvorbisdecoderinpin.cc" />
+    <ClCompile Include="webmvorbisdecoderoutpin.cc" />
+    <ClCompile Include="webmvorbisdecoderpin.cc" />
+  </ItemGroup>
+</Project>

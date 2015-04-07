@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Ogg Files">
+      <UniqueIdentifier>{34038ba4-a0a7-4641-97ef-0fefe6fc9ace}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="oggfile.cc">
+      <Filter>Ogg Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oggparser.cc">
+      <Filter>Ogg Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oggtrack.cc">
+      <Filter>Ogg Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oggtrackaudio.cc">
+      <Filter>Ogg Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllentry.cc" />
+    <ClCompile Include="webmoggsourcefilter.cc" />
+    <ClCompile Include="webmoggsourceoutpin.cc" />
+    <ClCompile Include="webmoggsourcepin.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="oggfile.h">
+      <Filter>Ogg Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oggparser.h">
+      <Filter>Ogg Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oggtrack.h">
+      <Filter>Ogg Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oggtrackaudio.h">
+      <Filter>Ogg Files</Filter>
+    </ClInclude>
+    <ClInclude Include="webmoggsourcefilter.h" />
+    <ClInclude Include="webmoggsourceoutpin.h" />
+    <ClInclude Include="webmoggsourcepin.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="webmoggsource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
