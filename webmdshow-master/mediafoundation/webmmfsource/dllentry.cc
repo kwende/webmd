@@ -76,7 +76,7 @@ STDAPI DllGetClassObject(
 STDAPI DllUnregisterServer()
 {
     HRESULT hr = ComReg::UnRegisterByteStreamHandler(
-                    L".webm",
+                    L".fff",
                     WebmTypes::CLSID_WebmMfByteStreamHandler);
     assert(SUCCEEDED(hr));  //TODO
 
