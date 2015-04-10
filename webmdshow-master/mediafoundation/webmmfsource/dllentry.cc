@@ -17,6 +17,8 @@
 HMODULE g_hModule;
 static ULONG s_cLock;
 
+const LPTSTR Extension = L".fff"; 
+
 namespace WebmMfSourceLib
 {
     HRESULT CreateHandler(
@@ -76,7 +78,7 @@ STDAPI DllGetClassObject(
 STDAPI DllUnregisterServer()
 {
     HRESULT hr = ComReg::UnRegisterByteStreamHandler(
-                    L".fff",
+                    Extension,
                     WebmTypes::CLSID_WebmMfByteStreamHandler);
     assert(SUCCEEDED(hr));  //TODO
 
@@ -121,7 +123,7 @@ static void RegisterHandler(const wchar_t* filename)
     assert(SUCCEEDED(hr));  //TODO
 
     hr = ComReg::RegisterByteStreamHandler(
-            L".webm",
+            Extension,
             WebmTypes::CLSID_WebmMfByteStreamHandler,
             friendly_name);
 
